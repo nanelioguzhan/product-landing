@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+  
+#header {
+    display:flex; 
+    justify-content: space-around;
+    align-items:center;
+    padding: 0 30px;
+    min-height: 75px;
+    position:fixed;
+    top:0;
+    background-color: orange;
+    
+}
+  
+#logo {
+    width: 60vw;
+}
+  
+#header img {
+    width: 100%;
+    height: 100%;
+    max-width:300px;
+    display:flex;
+    margin-left: 20px;
+}
+  
+nav {
+    font-weight: 400;
+}
+  
+nav ul {
+    width: 35vw;
+    display:flex;
+    justify-content: space-around;
+    text-align:center;
+    flex-direction: row;
+}
+  
+li {
+    list-style: none;
+}
+  
+li a {
+    color: black;
+    text-decoration: none;
+}
+  
+#main-header  {
+    text-align:center;
+    height:200px;
+    margin-top: 100px;
+    align-items:center;
+    justify-content:center;
+}
+  
+form input {
+    padding:5px;
+    max-width: 275px;
+    width:100%;
+}
+  
+#main-header h2 {
+    margin-bottom: 30px;
+}
+  
+#email {
+    display:block;
+    margin: 0 auto;
+}
+  
+#submit {
+    margin: 15px 0;
+    max-width: 120px;
+    width: 100%;
+    background-color: #e2e2f2;
+    border-radius: 5%;
+}
+  
+.main-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+#product-aspects {
+    margin-top: 50px;
+}
+  
+.flex {
+    display:flex;
+    margin-bottom: 50px;
+}
+  
+.align {
+    align-items:center;
+}
+  
+.picture {
+    height: 125px;
+    width: 20vw;
+    max-width: 200px;
+    min-width: 80px;
+    max-height:  200px;
+    margin-right: 50px;
+    display:flex;
+}
+  
+.flex h2 {
+    margin-bottom: 10px;
+}
+  
+#video-container {
+   display:flex;
+    justify-content:center;
+    margin-top: 80px;
+}
+  
+#video {
+    max-width: 600px;
+    width:100%;
+}
+  
+@media screen and (max-width: 524px) {
+     #header {
+      display:block;
+      width: 97vw;
+      padding:0;
+    }
+  
+    #header #logo {
+      width: 100%;
+    }
+  
+    #logo img {
+      margin: 0 auto;
+      margin-bottom:5px;
+    }
+  
+   nav ul {
+      display:block;
+      width: 100%;
+    }
+  
+    ul li {
+      margin-bottom:5px;
+    }
+  
+    #nav-bar {
+      width:100%;
+    }
+}
+  
+@media screen and (max-width:400px){ 
+  
+    .flex {
+      display:block;
+}
+  
+.picture{
+      margin:0;
+      max-width:500px;
+      width:100%;
+}
+  
+.flex h2, .flex p {
+      text-align: center;
+    }
+}
